@@ -1,87 +1,116 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumiére Hair Tech</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Lumiere Hair Tech | Home</title>
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
     <header class="cabecalho">
-        <h1>Lumiére Hair Tech</h1>
-        <p>Beleza, tecnologia e proteção para os fios.</p>
+        <nav class="menu">
+            <a class="logo" href="index.html">Lumiere Hair Tech</a>
+
+            <div class="menu-links">
+                <a href="index.html" class="ativo">Home</a>
+                <a href="#sobre">Sobre a marca</a>
+                <a href="#linhas">Linhas</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
     </header>
 
-    <div class="layout">
-        <aside class="menu-lateral">
-            <nav>
-
-                <a href="#produtos">Produtos</a>
-                
-                <a href="#contato">Contato</a>
-                
-                <a href="#carrinho">Carrinho</a>
-                
-                <a href="#sair">Sair</a>
-            </nav>
-        </aside>
-
-        <main class="conteudo">
-            <section id="marca" class="secao">
-                <h2>Sobre nossa marca</h2>
-
+    <main>
+        <section class="banner">
+            <div class="banner-texto">
+                <p class="subtitulo">Tecnologia para cuidados capilares</p>
+                <h1>Beleza, proteção e desempenho para os fios</h1>
                 <p>
-                    A Lumiére Hair Tech é uma marca voltada para aparelhos de cuidado capilar.
-                    A proposta é unir beleza, inovação e praticidade em produtos pensados
-                    para o uso no dia a dia.
+                    A Lumiere Hair Tech desenvolve soluções modernas para quem busca praticidade,
+                    controle de temperatura e acabamento profissional na rotina de beleza.
                 </p>
+                <a class="botao" href="#linhas">Conhecer linhas</a>
+            </div>
 
-            </section>
+            <!-- Coloque na pasta img uma imagem chamada banner-lumiere.jpg -->
+            <img src="img/banner-lumiere.jpg" alt="Mulher com cabelo bem cuidado" class="banner-imagem">
+        </section>
 
-            <section id="tecnologia" class="secao">
-                <h2>Sobre nossa tecnologia</h2>
-                <p>
-                    A tecnologia Lumiére foi pensada para melhorar o uso de secadores,
-                    chapinhas e babyliss, ajudando a controlar melhor a temperatura
-                    e oferecendo mais cuidado com os fios.
-                </p>
-            </section>
+        <section id="sobre" class="secao sobre">
+            <div class="titulo-secao">
+                <p class="subtitulo">Sobre a marca</p>
+                <h2>Lumiere Hair Tech</h2>
+            </div>
 
-            <section id="produtos" class="secao">
-                <h2>Produtos</h2>
+            <p>
+                A Lumiere Hair Tech é uma marca voltada para aparelhos de cuidado capilar,
+                com foco em inovação, segurança e elegância. Sua proposta é oferecer produtos
+                que auxiliem na secagem, modelagem e finalização dos cabelos, valorizando a
+                saúde dos fios e a praticidade no uso diário.
+            </p>
+        </section>
 
-                <div class="produtos">
+        <section class="secao beneficios">
+            <article>
+                <h3>Controle de calor</h3>
+                <p>Produtos pensados para auxiliar no uso adequado da temperatura.</p>
+            </article>
 
-                    <article class="card">
-                 <img src="img/Secador de cabelo Lumiére elegante.png"alt="Secador Lumiére">
-                        <h3>Secador</h3>
-                    </article>
+            <article>
+                <h3>Design elegante</h3>
+                <p>Visual moderno, sofisticado e alinhado ao segmento de beleza.</p>
+            </article>
 
-                    <article class="card">
-                        <img src="img/Pranchinha Lumiére elegante e sofisticada.png" alt="Chapinha Lumiére">
-                        <h3>Chapinha</h3>
-                    </article>
+            <article>
+                <h3>Praticidade</h3>
+                <p>Soluções para facilitar a rotina de cuidados com os cabelos.</p>
+            </article>
+        </section>
 
-                    <article class="card">
-                        <img src="img/Modelador de cachos Lumiére elegante.png" alt="Babyliss Lumiére">
-                        <h3>Babyliss</h3>
-                    </article>
-                </div>
+        <section id="linhas" class="secao">
+            <div class="titulo-secao">
+                <p class="subtitulo">Linhas</p>
+                <h2>Conheça nossos produtos</h2>
+            </div>
 
-            </section>
+            <div class="cards-produtos">
+                <article class="card">
+                    <!-- Coloque na pasta img uma imagem chamada secador-lumiere.jpg -->
+                    <img src="img/secador-lumiere.jpg" alt="Secador Lumiere">
+                    <h3>Secador Lumiere</h3>
+                    <p>Secagem eficiente, controle térmico e acabamento com brilho.</p>
+                </article>
 
-            <section id="contato" class="secao">
-                <h2>Contato</h2>
+                <article class="card">
+                    <!-- Coloque na pasta img uma imagem chamada prancha-lumiere.jpg -->
+                    <img src="img/prancha-lumiere.jpg" alt="Prancha Lumiere">
+                    <h3>Prancha Lumiere</h3>
+                    <p>Alisamento uniforme, placas modernas e resultado sofisticado.</p>
+                </article>
 
-                <p>E-mail: lumierehairtech@gmail.com</p>
+                <article class="card">
+                    <!-- Coloque na pasta img uma imagem chamada babyliss-lumiere.jpg -->
+                    <img src="img/babyliss-lumiere.jpg" alt="Babyliss Lumiere">
+                    <h3>Babyliss Lumiere</h3>
+                    <p>Modelagem de cachos e ondas com facilidade e segurança.</p>
+                </article>
+            </div>
+        </section>
 
-            </section>
-        </main>
-    </div>
+        <section class="secao chamada-contato">
+            <div>
+                <p class="subtitulo">Contato</p>
+                <h2>Precisa falar com a Lumiere?</h2>
+                <p>Veja nossos canais de atendimento e envie sua mensagem pela página de contato.</p>
+            </div>
+
+            <a class="botao" href="contato.html">Ir para contato</a>
+        </section>
+    </main>
 
     <footer class="rodape">
-        <p>Lumiére Hair Tech</p>
+        <p>Lumiere Hair Tech</p>
+        <p>Beleza, tecnologia e proteção para os fios.</p>
     </footer>
 </body>
 </html>
